@@ -11,13 +11,19 @@
 
 <body>
 
-    <ul>
+    <div class="container">
+
         @foreach ($movies as $el)
-            <li>
-                {{ $el['title'] }}
-            </li>
+            <div class="card">
+
+                <h3>movie title:</h3>
+
+                <h4>{{ $el['title'] }}</h4>
+
+            </div>
         @endforeach
-    </ul>
+
+    </div>
 
 </body>
 
