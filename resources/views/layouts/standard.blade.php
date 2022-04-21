@@ -11,7 +11,13 @@
 
 <body>
 
-    <h1>Test</h1>
+    <ul>
+        @foreach ($movies as $el)
+            <li>
+                {{ $el['title'] }}
+            </li>
+        @endforeach
+    </ul>
 
 </body>
 
